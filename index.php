@@ -1,3 +1,9 @@
+<?php
+// Connect to database if you want to fetch dashboard numbers later
+// include 'db_connection.php';
+// Example: You can fetch staff count, patient count here
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,12 +45,13 @@
             <nav class="col-md-2 d-none d-md-block sidebar">
                 <div class="position-sticky">
                     <h4 class="text-center py-3">Wellmeadows</h4>
-                    <a href="#">Home</a>
+                    <a href="index.php">Home</a>
                     <a href="staff/index.php">Staff Management</a>
                     <a href="wards/index.php">Ward Management</a>
                     <a href="patients/index.php">Patient Management</a>
-                    <a href="medication/index.php">Medication</a>
-                    <a href="supplies/index.php">Supplies</a>
+                    <a href="medication/index.php">Medication Management</a>
+                    <a href="supplies/items.php">Supplies Management</a>
+                    <a href="suppliers/index.php">Suppliers Management</a>
                     <a href="requisitions/index.php">Requisitions</a>
                     <a href="reports/index.php">Reports</a>
                 </div>
@@ -58,7 +65,7 @@
                         <div class="card text-white bg-primary mb-3">
                             <div class="card-body">
                                 <h5 class="card-title">Total Staff</h5>
-                                <p class="card-text">--</p>
+                                <p class="card-text">--</p> <!-- Here later you can echo the staff count -->
                             </div>
                         </div>
                     </div>
@@ -66,7 +73,7 @@
                         <div class="card text-white bg-success mb-3">
                             <div class="card-body">
                                 <h5 class="card-title">Total Patients</h5>
-                                <p class="card-text">--</p>
+                                <p class="card-text">--</p> <!-- Here later you can echo the patient count -->
                             </div>
                         </div>
                     </div>
@@ -74,7 +81,7 @@
                         <div class="card text-white bg-warning mb-3">
                             <div class="card-body">
                                 <h5 class="card-title">Total Wards</h5>
-                                <p class="card-text">--</p>
+                                <p class="card-text">--</p> <!-- Here later you can echo the ward count -->
                             </div>
                         </div>
                     </div>
@@ -91,4 +98,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
